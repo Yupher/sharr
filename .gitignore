@@ -1,0 +1,22 @@
+/sharingapp-server/node_modules
+/sharingapp-server/.env.local
+/sharingapp-server/package-lock.json
+/reactsharingappclient/node_modules
+/reactsharingappclient/.eslintcache
+/reactsharingappclient/package-lock.json
+
+/reactsharingappclient/.pnp
+/reactsharingappclient/.pnp.js
+
+# testing
+/reactsharingappclient/coverage
+
+# production
+/reactsharingappclient/build
+
+# misc
+/reactsharingappclient/.DS_Store
+/reactsharingappclient/.env.local
+/reactsharingappclient/.env.development.local
+/reactsharingappclient/.env.test.local
+/reactsharingappclient/.env.production.local
