@@ -1,22 +1,24 @@
-/sharingapp-server/node_modules
-/sharingapp-server/.env.local
-/sharingapp-server/package-lock.json
-/reactsharingappclient/node_modules
-/reactsharingappclient/.eslintcache
-/reactsharingappclient/package-lock.json
+sharrclient
 
-/reactsharingappclient/.pnp
-/reactsharingappclient/.pnp.js
 
+/sharrserver/node_modules
+/sharrserver/.env.local
+/sharrserver/package-lock.json
+/sharrclient/node_modules
+/sharrclient/.eslintcache
+/sharrclient/package-lock.json
+
+/sharrclient/.pnp
+/sharrclient/.pnp.js
 # testing
-/reactsharingappclient/coverage
+/sharrclient/coverage
 
 # production
-/reactsharingappclient/build
+/sharrclient/build
 
 # misc
-/reactsharingappclient/.DS_Store
-/reactsharingappclient/.env.local
-/reactsharingappclient/.env.development.local
-/reactsharingappclient/.env.test.local
-/reactsharingappclient/.env.production.local
+/sharrclient/.DS_Store
+/sharrclient/.env.local
+/sharrclient/.env.development.local
+/sharrclient/.env.test.local
+/sharrclient/.env.production.local

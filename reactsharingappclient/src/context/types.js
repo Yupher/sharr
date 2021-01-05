@@ -1,7 +1,0 @@
-export const UPLOAD_FILE = 'UPLOAD_FILE'
-export const UPLOAD_PERCENTAGE = 'UPLOAD_PERCENTAGE'
-export const SET_ALERT = 'SET_ALERT'
-export const CLEAR_ALERT = 'CLEAR_ALERT'
-export const LOADING_LINK = 'LOADING_LINK'
-export const RESET_PERCENTAG = 'RESET_PERCENTAG'
- 
