@@ -6,7 +6,7 @@ file sharing web application
 
 Nodejs : server side javascript \
 ReactJs: javascript frontend framework\
-mongoDB: nosql database \
+mongoDB: nosql database 
 
 # Dependencies
 
@@ -16,7 +16,7 @@ cors \
 mongoose\
 shortId\
 create-react-app\
-axios\
+axios
 
 
 
