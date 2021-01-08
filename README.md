@@ -2,7 +2,7 @@
 file sharing web application 
 
 
-# Rechnologies and frameworks 
+# Technologies and frameworks 
 
 Nodejs : server side javascript \
 ReactJs: javascript frontend framework\
