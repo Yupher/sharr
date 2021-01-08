@@ -3,10 +3,8 @@
 
 /sharrserver/node_modules
 /sharrserver/.env.local
-/sharrserver/package-lock.json
 /sharrclient/node_modules
 /sharrclient/.eslintcache
-/sharrclient/package-lock.json
 
 /sharrclient/.pnp
 /sharrclient/.pnp.js
