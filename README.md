@@ -2,13 +2,13 @@
 file sharing web application 
 
 
-#technologies and frameworks 
+# Rechnologies and frameworks 
 
 Nodejs : server side javascript 
 ReactJs: javascript frontend framework
 mongoDB: nosql database
 
-#Dependencies
+# Dependencies
 
 express
 express-fileupload
