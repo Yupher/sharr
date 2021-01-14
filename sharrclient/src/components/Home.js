@@ -8,6 +8,9 @@ import Links from './Links'
 const Home = () => {
   const uploadContext = useContext(UploadContext)
   const {loading,clearAlert, alert, uploadedFile} = uploadContext
+  useEffect(()=>{
+    if(uploadedFile !== null) setTimeout(()=>window.location.reload(), 3600000)
+  },[uploadedFile])
   useEffect(() => {
     if(alert !== null){
       setTimeout(() => {
