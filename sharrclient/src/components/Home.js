@@ -19,7 +19,6 @@ const Home = () => {
 
 
 
-
   return (
     <div className='container'>
       <h1 className='title'>SHARR</h1>
@@ -30,10 +29,12 @@ const Home = () => {
       <FileUpload />
       <ProgressBar />
       {/* <Links    url={uploadedFile.url}  /> */}
-      {uploadedFile === null && loading === false ? null: <Fragment> {uploadedFile === null && loading === true ?<Fragment>
-              <Loading />
-              <p style={{fontSize: '16px', textAlign:'center'}}>generating download link...</p>
-            </Fragment> :   <Links  url={uploadedFile.url} />}</Fragment>  
+      {uploadedFile === null && loading === false ? null: <Fragment> 
+        {uploadedFile === null && loading === true ?<Fragment>
+                <Loading />
+                <p style={{fontSize: '16px', textAlign:'center'}}>generating download link...</p>
+              </Fragment> :   <Links  url={uploadedFile.url} />}
+          </Fragment>  
         
        }
        

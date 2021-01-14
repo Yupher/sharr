@@ -32,7 +32,8 @@ const UploadState = props =>{
         if(ProgressEvent.total >= 200 * 1024 *1024) {
           //cancelTokenSource.cancel('Upload cancelled');
           abort()
-          return dispatch({type: SET_ALERT, payload: 'file too large max 200 mb'})
+          dispatch({type: SET_ALERT, payload: 'file too large max 200 mb'})
+          setTimeout(()=>window.location.reload(), 900)
         }
         dispatch({type: UPLOAD_PERCENTAGE, payload: ProgressEvent})
       }

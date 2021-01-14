@@ -4,7 +4,7 @@ import UploadContext from '../context/UploadContext'
 const FileUpload = () => {
   const [file, setFile] = useState(null)
   const uploadContext = useContext(UploadContext)
-  let {uploadFile,uploadPercentage, resetPercentage, abort } = uploadContext
+  let {uploadFile,uploadPercentage, abort } = uploadContext
   const onSubmit = e =>{
     e.preventDefault()
     let formData = new FormData()
@@ -19,7 +19,7 @@ const FileUpload = () => {
   const onAbort = e =>{
     if(uploadPercentage === 0 ) return
     abort()
-    resetPercentage()
+    setTimeout(()=>{window.location.reload()},900)
   }
 
 

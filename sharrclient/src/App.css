@@ -5,7 +5,10 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(234, 223, 255)
+  color: rgb(234, 223, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container{
  width: 60%;
@@ -182,6 +185,36 @@ form{
    
    .title{
      width: 100%;
+     font-size: 2.8rem;
+     letter-spacing: 1.6rem;
+     margin-top: 2.3rem;
+   }
+
+  .links-flex{
+    margin-top: 40px;
+    padding: 6px 4px;
+    
+  }
+  .button-small{
+    margin: 0;
+    padding-top: 0px ;
+    padding-bottom: 0px ;
+    font-size: 12px;
+  }
+  .links-flex a{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 420px){
+  .container{
+    max-width: 100%;
+    margin: auto;
+   }
+   
+   .title{
+     max-width: 100%;
+     align-content: center;
+     text-align: center;
      font-size: 2.8rem;
      letter-spacing: 1.6rem;
      margin-top: 2.3rem;
