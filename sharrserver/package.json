@@ -6,7 +6,9 @@
   "scripts": {
     "run": "node app.js",
     "client": "cd ../sharrclient && npm start",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd ../sharrclient && npm install  && cd ../sharrclient &&npm run build"
+    "client-install":"cd ../sharrclient && npm install",
+    "client-build":"cd ../sharrclient && npm run build",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm run client-install && npm run client-build"
   },
   "author": "Yupher Inc",
   "license": "ISC",
