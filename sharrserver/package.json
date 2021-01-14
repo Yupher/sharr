@@ -4,8 +4,8 @@
   "description": "sharing file with node express server",
   "main": "app.js",
   "scripts": {
-    "run": "node app.js",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "start-server": "nodemon app.js"
   },
   "author": "Yupher Inc",
   "license": "ISC",

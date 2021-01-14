@@ -9,12 +9,11 @@
     "npm": "7.3.0"
   },
   "scripts": {
-    "start": "node sharrserver/app.js",
+    "start": "npm start --prefix sharrserver",
     "client": "npm start --prefix sharrclient ",
     "client-install": "npm install --prefix sharrclient",
     "client-build": "npm run build --prefix sharrclient",
     "server-install": "npm install --prefix sharrserver",
-    "server": "npm start --prefix sharrserver",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix sharrserver && npm install --prefix sharrclient && npm run build --prefix sharrclient"
   }
 }

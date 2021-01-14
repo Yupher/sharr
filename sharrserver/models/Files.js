@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const shortId = require('shortId')
+const shortId = require('shortid')
 
 const schema = mongoose.Schema
 
