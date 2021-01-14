@@ -1,0 +1,12 @@
+{
+  "name": "yupher-sharr",
+  "version": "1.0.1",
+  "private": "true",
+  "scripts": {
+    "client": "npm start --prefix sharrclient ",
+    "client-install": "npm install --prefix sharrclient",
+    "client-build": "cd npm run build --prefix sharrclient",
+    "server": "node app.js --prefix sharrserver",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm run client-install && npm run client-build"
+  }
+}
