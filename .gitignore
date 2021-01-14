@@ -1,0 +1,23 @@
+
+
+
+/sharrserver/node_modules
+/sharrserver/uploads/**
+/sharrserver/.env.local
+/sharrclient/node_modules
+/sharrclient/.eslintcache
+
+/sharrclient/.pnp
+/sharrclient/.pnp.js
+# testing
+/sharrclient/coverage
+
+# production
+/sharrclient/build
+
+# misc
+/sharrclient/.DS_Store
+/sharrclient/.env.local
+/sharrclient/.env.development.local
+/sharrclient/.env.test.local
+/sharrclient/.env.production.local
