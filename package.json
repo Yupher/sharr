@@ -14,6 +14,6 @@
     "client-build": "npm run build --prefix sharrclient",
     "server-install": "npm install --prefix sharrserver",
     "server": "node app.js --prefix sharrserver",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix sharrserver && npm install --prefix sharrclient && npm run build --prefix sharrclient && npm run --prefix sharr server"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix sharrserver && npm install --prefix sharrclient && npm run build --prefix sharrclient && npm run --prefix sharrserver"
   }
 }
