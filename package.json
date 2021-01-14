@@ -9,6 +9,7 @@
     "npm": "7.3.0"
   },
   "scripts": {
+    "start": "node app.js --prefix sharrserver",
     "client": "npm start --prefix sharrclient ",
     "client-install": "npm install --prefix sharrclient",
     "client-build": "npm run build --prefix sharrclient",
