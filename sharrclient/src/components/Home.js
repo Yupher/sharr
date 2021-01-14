@@ -1,4 +1,4 @@
-import React,{useContext,Fragment, useEffect} from 'react'
+import React, {useContext, Fragment, useEffect} from 'react'
 import FileUpload from './FileUpload'
 import ProgressBar from './ProgressBar'
 import Loading from './Loading'
