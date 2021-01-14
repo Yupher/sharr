@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "run": "node app.js",
-    "start": "nodemon app.js"
+    "client": "cd ../sharrclient && npm start",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd ../sharrclient && npm install  && cd ../sharrclient &&npm run build"
   },
   "author": "Yupher Inc",
   "license": "ISC",
