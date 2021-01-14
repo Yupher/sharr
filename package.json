@@ -2,19 +2,19 @@
   "name": "yupher-sharr",
   "version": "1.0.1",
   "description": "a very secure way to share files please note that we delete files completely from our server 1 HOUR after the upload",
-  "main": "app.js --prefix sharrserver",
+  "main": "sharrserver/app.js",
   "private": "true",
   "engines": {
     "node": "15.5.1",
     "npm": "7.3.0"
   },
   "scripts": {
-    "start": "node app.js --prefix sharrserver",
+    "start": "node sharrserver/app.js",
     "client": "npm start --prefix sharrclient ",
     "client-install": "npm install --prefix sharrclient",
     "client-build": "npm run build --prefix sharrclient",
     "server-install": "npm install --prefix sharrserver",
-    "server": "node app.js --prefix sharrserver",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix sharrserver && npm install --prefix sharrclient && npm run build --prefix sharrclient && npm run --prefix sharrserver"
+    "server": "npm start --prefix sharrserver",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix sharrserver && npm install --prefix sharrclient && npm run build --prefix sharrclient"
   }
 }
