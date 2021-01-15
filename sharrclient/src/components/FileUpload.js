@@ -16,7 +16,7 @@ const FileUpload = () => {
      setFile(e.target.files[0]) 
   }
 
-  const onAbort = e =>{
+  const onClickAbort = () =>{
     if(uploadPercentage === 0 ) return
     abort()
     setTimeout(()=>{window.location.reload()},900)
@@ -29,7 +29,7 @@ const FileUpload = () => {
       <small>the file should NOT  be more than 200 mb</small>
       <div style={{display:'flex',justifyContent:'space-between'}} >
         <input type="submit" value="Upload" className='button upload-btn'/>
-        <input type="button" value="Abort" onClick={onAbort} className='button abort-btn'/> 
+        <input type="button" value="Abort" onClick={onClickAbort} className='button abort-btn'/> 
       </div>
     
     </form>

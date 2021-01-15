@@ -2,13 +2,13 @@ const express = require('express')
 const fileUpload = require('express-fileupload')
 const path = require('path')
 const cors = require('cors')
-const helmet = require('helmet')
+//const helmet = require('helmet')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const {db} = require('./config')
 
 const app = express()
-app.use(helmet())
+//app.use(helmet())
 mongoose.connect(db,{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false,useCreateIndex: true,})
   .then(()=>console.log('mongodb satrted.....'))
   .catch(e=>console.log(e))
@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 global.__basedir = __dirname
 
-
+console.log(process.env.NODE_ENV)
 
 
 app.use('/api/files', require('./routes/api/files'))
