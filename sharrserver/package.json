@@ -1,6 +1,6 @@
 {
   "name": "sharr-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "sharing file with node express server",
   "main": "app.js",
   "scripts": {

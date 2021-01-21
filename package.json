@@ -1,9 +1,10 @@
 {
   "name": "yupher-sharr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a very secure way to share files please note that we delete files completely from our server 1 HOUR after the upload",
   "main": "sharrserver/app.js",
   "private": "true",
+  "author": "Yupher Inc",
   "engines": {
     "node": "15.5.1",
     "npm": "7.3.0"
