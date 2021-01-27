@@ -1,9 +1,5 @@
-
-
-
 /sharrserver/node_modules
 /sharrserver/uploads/**
-/sharrserver/.env.local
 /sharrclient/node_modules
 /sharrclient/.eslintcache
 
