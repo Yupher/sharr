@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
-  font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient( rgba(108, 108, 232,.5), rgba(94, 94, 245,1),rgba(255, 99, 71,.9) );
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    rgba(108, 108, 232, 0.5),
+    rgba(94, 94, 245, 1),
+    rgba(255, 99, 71, 0.9)
+  );
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,25 +14,25 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-.container{
- width: 60%;
- margin-left: 20%;
- margin-right: 20% ;
- margin-top: 20px;
+.container {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
 }
 
-.title{
+.title {
   width: 100%;
   font-size: 5rem;
   text-align: center;
   letter-spacing: 2.5rem;
-  text-shadow: 2px 2px 15px rgba(35, 35, 84,.5);
+  text-shadow: 2px 2px 15px rgba(35, 35, 84, 0.5);
   margin-top: 2.5rem;
 }
-form{
+form {
   margin-top: 2.5rem;
 }
-.upload-box{
+.upload-box {
   font-size: 20px;
   /* background-color: rgb(108, 108, 232) ; */
   background: none;
@@ -40,29 +44,28 @@ form{
   outline: none;
   cursor: pointer;
 }
-::-webkit-file-upload-button{
+::-webkit-file-upload-button {
   outline: none;
   font-size: 20px;
   height: 30px;
-/*   background-color: rgb(108, 108, 232);*/
-   background: none;
+  /*   background-color: rgb(108, 108, 232);*/
+  background: none;
   color: rgb(239, 234, 248);
   border: none;
   border-right: 2px solid rgb(239, 234, 248);
   cursor: pointer;
 }
 
-
-.button{
+.button {
   margin-top: 10px;
   margin: 10px;
-  padding-top: 10px ;
-  padding-bottom: 10px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 25px;
   /* background-color: rgb(81, 81, 245) ; */
   background: none;
   color: rgb(239, 234, 248);
-  border-radius: 15px 30px 15px 30px; 
+  border-radius: 15px 30px 15px 30px;
   box-shadow: 2px 2px 15px rgb(35, 35, 84);
   border: 2px solid rgb(239, 234, 248);
   width: 100%;
@@ -70,33 +73,33 @@ form{
   cursor: pointer;
 }
 
-.upload-btn:hover{
-  background-color:rgba(71, 255, 86, 0.7) ;
+.upload-btn:hover {
+  background-color: rgba(71, 255, 86, 0.7);
   transition: background-color 0.6s ease-in-out;
 }
-.abort-btn:hover{
-  background-color:rgba(255, 99, 71,0.7) ;
+.abort-btn:hover {
+  background-color: rgba(255, 99, 71, 0.7);
   transition: background-color 0.6s ease-in-out;
 }
 
-.progress-bar{
+.progress-bar {
   position: relative;
   margin-top: 15px;
   /* padding: 5px 0px; */
   width: 100%;
   height: 20px;
-  border: 2px solid  rgb(239, 234, 248);
-  border-radius: 30px 15px 30px 15px ;
+  border: 2px solid rgb(239, 234, 248);
+  border-radius: 30px 15px 30px 15px;
   box-shadow: 2px 2px 15px rgb(35, 35, 84);
 }
-.progress-bar-fill{
+.progress-bar-fill {
   height: 100%;
   background-color: green;
   /* padding: 5px 0px; */
-  border-radius: 30px 15px 30px 15px ;
+  border-radius: 30px 15px 30px 15px;
   transition: width 0.5s;
 }
-.progress-bar-value{
+.progress-bar-value {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -105,133 +108,131 @@ form{
   align-items: center;
   justify-content: center;
 }
-.loading{
+.loading {
   width: 150px;
   height: 150px;
-  border:  16px solid  rgb(108, 108, 232);
+  border: 16px solid rgb(108, 108, 232);
   border-top-color: rgb(255, 99, 71);
   border-bottom-color: rgb(71, 255, 221);
-  margin-top: 50px; 
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
-  animation: spin 1.5s linear infinite;
+  border-radius: 45%;
+  animation: spin 1s cubic-bezier(0.55, -0.48, 0.5, 1.62) infinite;
 }
-.links-flex{
+.links-flex {
   margin-top: 40px;
   padding: 10px 8px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid  rgb(239, 234, 248);
+  border: 2px solid rgb(239, 234, 248);
   border-radius: 15px 50px 30px 15px;
   box-shadow: 2px 2px 15px rgb(35, 35, 84);
 }
-.links-flex a{
+.links-flex a {
   color: rgb(239, 234, 248);
   text-decoration: none;
   font-size: 20px;
 }
-.button-small{
+.button-small {
   margin: 0;
-  padding-top: 0 ;
-  padding-bottom: 0 ;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 18px;
-  width:60px;
+  width: 60px;
 }
 @keyframes spin {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 763px){
-  .container{
+@media only screen and (max-width: 763px) {
+  .container {
     width: 70%;
     margin-left: 15%;
-    margin-right: 15% ;
-   }
-   
-   .title{
-     width: 100%;
-     font-size: 3rem;
-     letter-spacing: 2rem;
-     margin-top: 2rem;
-   }
+    margin-right: 15%;
+  }
 
-  .links-flex{
+  .title {
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    margin-top: 2rem;
+  }
+
+  .links-flex {
     margin-top: 40px;
     padding: 8px 6px;
   }
-  .button-small{
+  .button-small {
     margin: 0;
-    padding-top: 2px ;
-    padding-bottom: 2px ;
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 15px;
   }
-  .links-flex a{
+  .links-flex a {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 520px){
-  .container{
+@media only screen and (max-width: 520px) {
+  .container {
     width: 80%;
     margin-left: 10%;
-    margin-right: 10% ;
-   }
-   
-   .title{
-     width: 100%;
-     font-size: 2.8rem;
-     letter-spacing: 1.6rem;
-     margin-top: 2.3rem;
-   }
+    margin-right: 10%;
+  }
 
-  .links-flex{
+  .title {
+    width: 100%;
+    font-size: 2.8rem;
+    letter-spacing: 1.6rem;
+    margin-top: 2.3rem;
+  }
+
+  .links-flex {
     margin-top: 40px;
     padding: 6px 4px;
-    
   }
-  .button-small{
+  .button-small {
     margin: 0;
-    padding-top: 0px ;
-    padding-bottom: 0px ;
+    padding-top: 0px;
+    padding-bottom: 0px;
     font-size: 12px;
   }
-  .links-flex a{
+  .links-flex a {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 420px){
-  .container{
+@media only screen and (max-width: 420px) {
+  .container {
     max-width: 100%;
     margin: auto;
-   }
-   
-   .title{
-     max-width: 100%;
-     align-content: center;
-     text-align: center;
-     font-size: 2.8rem;
-     letter-spacing: 1.6rem;
-     margin-top: 2.3rem;
-   }
+  }
 
-  .links-flex{
+  .title {
+    max-width: 100%;
+    align-content: center;
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 1.6rem;
+    margin-top: 2.3rem;
+  }
+
+  .links-flex {
     margin-top: 40px;
     padding: 6px 4px;
-    
   }
-  .button-small{
+  .button-small {
     margin: 0;
-    padding-top: 0px ;
-    padding-bottom: 0px ;
+    padding-top: 0px;
+    padding-bottom: 0px;
     font-size: 12px;
   }
-  .links-flex a{
+  .links-flex a {
     font-size: 12px;
   }
 }

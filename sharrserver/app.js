@@ -8,9 +8,9 @@ require('dotenv').config()
 const {db} = require('./config')
 
 const app = express()
-//app.use(helmet())
+app.use(helmet())
 mongoose.connect('mongodb://localhost:27017/sharingapp',{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false,useCreateIndex: true,})
-  .then(()=>console.log('mongodb satrted.....'))
+  .then(()=>console.log('mongodb connected.....'))
   .catch(e=>console.log(e))
 app.use(fileUpload({
   limits: {
